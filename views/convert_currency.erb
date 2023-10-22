@@ -1,0 +1,9 @@
+<h1>Convert <%=@currency_to_convert%> </h1>
+
+Go <a href="/">back</a>.
+
+<ul>
+  <%@list_of_curriencies_json.each do |key, value|%>
+    <li><a href="/<%=@currency_to_convert%>/<%=key%>">Convert 1 <%=@currency_to_convert%> to <%=key%>...</a></li>
+  <%end%>  
+</ul>

@@ -1,0 +1,7 @@
+<h1>Currency pairs</h1>
+
+<ul>
+  <%@list_of_curriencies_json.each do |key, value|%>
+    <li><a href="/<%=key%>">Convert 1 <%=key%> to...</a></li>
+  <%end%>  
+</ul>
